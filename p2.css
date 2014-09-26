@@ -1,0 +1,50 @@
+/*CSS rules for p1*/
+/*This CSS validates on W3C as CSS level 3 */
+
+body {
+	font-family: Veranda, Arial, sans-serif;
+	font-size: small;
+
+}
+
+.morning {
+	background-color: #865f86;
+}
+
+.afternoon {
+	background-color: #2c87c8;
+}
+
+
+.evening {
+	background-color: #c7b02f;
+}
+
+.night {
+	background-color: #180629;
+}
+
+
+h1 {
+	font-size:  200%;	
+	color: black;
+	line-height: 1em;
+}
+
+h2 {
+	font-size:  130%;
+	color: black;
+	line-height: 1em;
+}
+
+h3 {
+	font-size:  110%;
+	color: black;
+	line-height: 1em;
+}
+
+p {
+	font-size:  90%;
+	color:  black;
+}
+
