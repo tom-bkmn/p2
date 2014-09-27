@@ -4,6 +4,15 @@
 	  * The user also has the ability to add simple suffixes to the 
 	  * password - an extra non-alphabetic character or a single numerical
 	  * digit.
+	  *
+	  * Bullet proofing:
+	  * 1. If number of words for the password is zero, special chars
+	  * are not added as there is no password to add them too.
+	  *
+	  * 2. Input validation.  The number of words to use for the password
+	  * must be entered as an integer.  Any other character throws an 
+	  * error to the user.  The user can use zero.  This results in an
+	  * empty password.  
 	  */
 	 
 	 /* Read all the words in a text file, put them in a numerically indexed array. */
@@ -26,7 +35,7 @@
 	 /* If the user elects to append the password with the number, add the 
 	  * number.  The number added is selected at random.
 	  */
-	 if (isset($_POST["appendANumber"])) {
+	 if (isset($_POST["appendANumber"]) && $password != "") {
 	     $randNumber = rand (0 , 9 );
 	     $password = $password . $randNumber; 
 	 }
@@ -34,7 +43,7 @@
 	 /* If the user elects to append the password with the character, add the 
 	  * '@' character.
 	  */
-	 if (isset($_POST["appendACharacter"])) {
+	 if (isset($_POST["appendACharacter"]) && $password != "") {
 	     $password = $password . '@';
 	 }
 	 
