@@ -18,7 +18,6 @@
      4. Whether to include a special symbol (for example, @).
  -->
     	<form action="index.php" method="POST">
-    	<!-- Consider a dropdown here -->
             <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is:<br>
             <input type="text" maxlength=1 size=1 name='numberOfWords' id='numberOfWords'>
             <br>
@@ -32,6 +31,8 @@
             <br>
             <input type='submit' value="Generate Another!">
         </form>
+        
+        <h1><?php echo getPassword(); ?></h1>
 
     </body>
 </html>

@@ -13,45 +13,22 @@
 	 
 	 $filename = "mit.word.list.txt";
 	 $wordList = file ($filename, FILE_IGNORE_NEW_LINES); 
-	 
-	 print_r ($_POST["numberOfWords"] . "loop this many times" . "<br />");
+	 $password = "";
 	 
 	 for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
-	     echo $i . "<br />";
+	     $randVal = rand (0 , 10000 );	
+	     if ($i == 1 ){
+	         $password = $wordList[$randVal];	     
+	     } else {
+	         $password = $password . "-" . $wordList[$randVal];
+	     }
 	 }
 	 
+	// echo "The password is " . $password;
 	 
-	// foreach ($_POST as $key => $value){
-        //	echo $key . ":" . $value . "<br />";	
-        // }
-
-	 $randVal = rand (0 , 10000 );	 
- 
-
-
-	//print_r($_POST);
-//	print_r($_GET);
-	
-	
-        
-
-
-        
-        function getImage() {
-
-	}
-	
-	
-	function getClassName(){
-	$tjb = [
-           "e1" => "val1",
-           "e2" => "val2",
-           "e3" => "val3",
-           "e4" => "val4",
-        ];
-
-	}
-	
-
-		
+	 function getPassword() {
+	     global $password; 
+	     return $password;	 
+	 }
+	 	
 ?>
