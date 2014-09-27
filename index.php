@@ -32,8 +32,6 @@
             <br>
             <input type='submit' value="Generate Another!">
         </form>
-        <pre>
-        	<?php print_r($_POST); ?>
-        </pre>
+
     </body>
 </html>
