@@ -13,21 +13,29 @@
 	 
 	 $filename = "mit.word.list.txt";
 	 $wordList = file ($filename, FILE_IGNORE_NEW_LINES); 
+	 
+	 print_r ($_POST["numberOfWords"] . "loop this many times" . "<br />");
+	 
+	 for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
+	     echo $i . "<br />";
+	 }
+	 
+	 
+	// foreach ($_POST as $key => $value){
+        //	echo $key . ":" . $value . "<br />";	
+        // }
 
-	print_r($_POST);
-	print_r($_GET);
-	
-	
-        
-        foreach ($_POST as $key => $value){
-        	echo $key . ":" . $value . "<br />";	
-        }
+	 $randVal = rand (0 , 10000 );	 
+ 
 
-	
+
+	//print_r($_POST);
+//	print_r($_GET);
 	
 	
         
-        
+
+
         
         function getImage() {
 
