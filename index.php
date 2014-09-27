@@ -18,15 +18,15 @@
      4. Whether to include a special symbol (for example, @).
  -->
     	<form action="index.php" method="POST">
-            <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is:<br>
+            <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is allowed in nine.<br>
             <input type="text" maxlength=1 size=1 name='numberOfWords' id='numberOfWords'>
             <br>
             <br>
-            <label for='appendANumber'>Append the password with a randomly generated integer?<br>
+            <label for='appendANumber'>Would you like to append the password with a randomly generated integer?<br>
             <input type='checkbox' name='appendANumber' id='appendANumber' >
 	    <br>
 	    <br>            
-            <label for='appendACharacter'>Append the password with the '@' character?<br>
+            <label for='appendACharacter'>Would you like to append the password with the '@' character?<br>
             <input type='checkbox' name='appendACharacter' id='appendACharacter' >
             <br>
             <input type='submit' value="Generate Another!">

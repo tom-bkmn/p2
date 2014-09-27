@@ -1,34 +1,46 @@
 <?php
-	/*
-	 * on submitt,
-	 *	1. Read the contents of the dictionary, put in a numerically indexed array.
-	 *	2. Loop for the number supplied by user.
-	 *	3. Randomly generated number, use as index for dictionary
-	 *	4. Concatenate variable with dictionary term
-	 *	5. Append hyphen.
-	 *	7. If check box for number, append number
-	 *	8. If check box for character, append character.
-	 *	9. Return it.
-	 */
+	 /* This file provides all the processing required to create the 
+	  * password.  The length of the password is determined by the user.
+	  * The user also has the ability to add simple suffixes to the 
+	  * password - an extra non-alphabetic character or a single numerical
+	  * digit.
+	  */
 	 
+	 /* Read all the words in a text file, put them in a numerically indexed array. */
 	 $filename = "mit.word.list.txt";
 	 $wordList = file ($filename, FILE_IGNORE_NEW_LINES); 
 	 $password = "";
 	 
+	 /* Iteration set by the user in the UI.  This loop constructs the password
+	  *  from words selected at random from the text file.
+	  */
 	 for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
-	     $randVal = rand (0 , 10000 );	
+	     $randIndex = rand (0 , 10000 );	
 	     if ($i == 1 ){
-	         $password = $wordList[$randVal];	     
+	         $password = $wordList[$randIndex];	     
 	     } else {
-	         $password = $password . "-" . $wordList[$randVal];
+	         $password = $password . "-" . $wordList[$randIndex];
 	     }
 	 }
 	 
-	// echo "The password is " . $password;
+	 /* If the user elects to append the password with the number, add the 
+	  * number.  The number added is selected at random.
+	  */
+	 if (isset($_POST["appendANumber"])) {
+	     $randNumber = rand (0 , 9 );
+	     $password = $password . $randNumber; 
+	 }
 	 
+	 /* If the user elects to append the password with the character, add the 
+	  * '@' character.
+	  */
+	 if (isset($_POST["appendACharacter"])) {
+	     $password = $password . '@';
+	 }
+	 
+	 /* Simple function that returns the password*/
 	 function getPassword() {
 	     global $password; 
 	     return $password;	 
-	 }
-	 	
+	 }	
 ?>
