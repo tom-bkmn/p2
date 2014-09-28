@@ -8,16 +8,22 @@
         <?php require("logic.php"); ?>
     </head>
     <body >
-        <h2>Welcome to the XKCD password generator.</h2>  
-        <p>The generator will create passwords for you based on combinations of familiar words.  You can set the maximum number of words to be used in the password.</p>
- <!-- 
-     1. Landing page includes a description of your app and what a xkcd password is (assume an unfamiliar audience).
-        Form inputs to specify:
-     2. How many words to use.
-     3. Whether to include a number.
-     4. Whether to include a special symbol (for example, @).
- -->
-    	<form action="index.php" method="POST">
+       
+        <div>
+            <img class="bannerRight" src="images/blueberryHill.Bushes.bannerLeft.jpg" height= "198"width="250" alt="photograph of fall colors">
+        </div>
+        <div class="banner">
+            <h1>Tom Beikman</h1>
+            <h1>Dynamic Web Applications CSCI - E15 P2 Project</h1>
+        </div>
+    	<div>
+    	    <img class="sideImage" src="images/blueberryHill.Bushes.2.croped.jpg" height="600" width="250" alt="photograph of fall colors">
+    	</div>
+
+        <h1 class="indent">Welcome to the XKCD password generator.</h1>  
+        <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by a hyphen.  You can set the maximum number of words to be used in the password.</h3>
+
+    	<form class="form" action="index.php" method="POST">
             <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is allowed in nine.<br>
             <input type="text" maxlength=1 size=1 name='numberOfWords' id='numberOfWords'>
             <br>
@@ -32,7 +38,8 @@
             <input type='submit' value="Generate Another!">
         </form>
         
-        <h1><?php echo getPassword(); ?></h1>
+        <!-- Ideally the password is printed here, but an error message is possible too -->
+        <h2><?php echo getPassword(); ?></h2>
 
     </body>
 </html>

@@ -7,28 +7,46 @@
 	  *
 	  * Bullet proofing:
 	  * 1. If number of words for the password is zero, special chars
-	  * are not added as there is no password to add them too.
+	  * are not added as there is no password to add them too.  This 
+	  * prevents passwords such as '@', or '4' or '5@'.
 	  *
 	  * 2. Input validation.  The number of words to use for the password
-	  * must be entered as an integer.  Any other character throws an 
-	  * error to the user.  The user can use zero.  This results in an
+	  * must be entered as an integer.  Any other character produces an 
+	  * error message.  The user can use zero or "".  This results in an
 	  * empty password.  
+	  *
+	  * 3. User message.  The code will produce label text,
+	  * "Your password is:," for the password.  However, if the password
+	  * length is zero, this label will not be printed on the screen.
 	  */
 	 
 	 /* Read all the words in a text file, put them in a numerically indexed array. */
-	 $filename = "mit.word.list.txt";
+	 $filename = "mit.word.list.txt"; // This word list is from MIT.
 	 $wordList = file ($filename, FILE_IGNORE_NEW_LINES); 
 	 $password = "";
+	 $error_msg = "";
+	 $password_msg = "";
 	 
-	 /* Iteration set by the user in the UI.  This loop constructs the password
-	  *  from words selected at random from the text file.
+	 /* Validation - if the user enters a character other than a number
+	  * set the error message.  Empty string is allowed, however.  
 	  */
-	 for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
-	     $randIndex = rand (0 , 10000 );	
-	     if ($i == 1 ){
-	         $password = $wordList[$randIndex];	     
-	     } else {
-	         $password = $password . "-" . $wordList[$randIndex];
+	 if (! is_numeric($_POST["numberOfWords"]) && $_POST["numberOfWords"] != "") {
+	     $error_msg = "Please enter only a numeric value in the textbox.";
+	 } else {
+	     /* Iteration set by the user in the UI.  This loop constructs the password
+	      *  from words selected at random from the text file.
+	      */
+	     for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
+	         $randIndex = rand (0 , 10000 );
+	         // prevents first character being '-'.
+	         if ($i == 1 ){
+	             $password = $wordList[$randIndex];	     
+	         } else {
+	             $password = $password . "-" . $wordList[$randIndex];
+	         } 
+	     }
+	     if ($password != "") {
+	         $password_msg = "Your password is: <br />";
 	     }
 	 }
 	 
@@ -47,9 +65,17 @@
 	     $password = $password . '@';
 	 }
 	 
-	 /* Simple function that returns the password*/
+	 /* Simple function that returns the password or error message if
+	  * one was generated.  
+	  */
 	 function getPassword() {
 	     global $password; 
-	     return $password;	 
+	     global $error_msg;
+	     global $password_msg;
+	     if ($error_msg != "") {
+	     	 return $error_msg;
+	     } else {	 
+	         return $password_msg . $password;
+	     }
 	 }	
 ?>
