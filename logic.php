@@ -27,7 +27,7 @@
 	 $error_msg = "";
 	 $password_msg = "";
 	 
-	 //Only process if numberOfWords is set
+	 //Only process if numberOfWords is set to some value.
 	 if (isset($_POST["numberOfWords"])) {
 	 /* Validation - if the user enters a character other than a number
 	  * set the error message.  Empty string is allowed, however.  

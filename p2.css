@@ -25,6 +25,7 @@ body {
 	border-style: solid;
 	background-image: url(images/blueberryHill.Bushes.tops.4.jpg);
 	margin-left: 275px;
+	float-right;
 
 }
 
@@ -32,7 +33,7 @@ body {
 	margin-left: 275px;
 }
 
-.bannerRight {
+.bannerLeft {
 	border-width: 1px;
 	border-color: black;
 	border-style: solid;

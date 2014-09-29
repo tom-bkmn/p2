@@ -8,20 +8,22 @@
         <?php require("logic.php"); ?>
     </head>
     <body >
-       
+
         <div>
-            <img class="bannerRight" src="images/blueberryHill.Bushes.bannerLeft.jpg" height="198" width="250" alt="photograph of fall colors">
+            <img class="bannerLeft" src="images/blueberryHill.Bushes.bannerLeft.jpg" height="200" width="250" alt="photograph of fall colors">
         </div>
         <div class="banner">
             <h1>Tom Beikman</h1>
             <h1>Dynamic Web Applications CSCI - E15 P2 Project</h1>
         </div>
+        </div>
+        <br>
     	<div>
     	    <img class="sideImage" src="images/blueberryHill.Bushes.2.croped.jpg" height="600" width="250" alt="photograph of fall colors">
     	</div>
-    	<div>
+
             <h1 class="indent">Welcome to the xkcd password generator.</h1>
-            <h3 class="indent">What is an xkcd password? It is a password as one made of mulitple common words connected by a hyphen.  What is xkcd? It is a reference to a web site maintained by Randall Munroe.  xkcd is not an acronym but instead is a 4 character identifier for Randall's site discribed as "A webcomic of romance,
+            <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  What is xkcd?  It is a reference to a web site maintained by Randall Munroe.  xkcd is not an acronym but instead is a 4 character identifier for Randall's site self discribed as "a webcomic of romance,
  sarcasm, math, and language."  Give it a go:  <a href="http://xkcd.com/">xkcd</a> </h3>
             <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by hyphens.  You can set the maximum number of words to be used in the password.</h3>
         </div>
@@ -44,7 +46,7 @@
         </form>
         
         <!-- Ideally the password is printed here, but an error message is possible too -->
-        <h2><?php echo getPassword(); ?></h2>
+        <h2 class="indent"><?php echo getPassword(); ?></h2>
         
         <!-- The site validates 4.01 strict with w3.org 
          <p>
