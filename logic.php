@@ -27,28 +27,31 @@
 	 $error_msg = "";
 	 $password_msg = "";
 	 
+	 //Only process if numberOfWords is set
+	 if (isset($_POST["numberOfWords"])) {
 	 /* Validation - if the user enters a character other than a number
 	  * set the error message.  Empty string is allowed, however.  
 	  */
-	 if (! is_numeric($_POST["numberOfWords"]) && $_POST["numberOfWords"] != "") {
-	     $error_msg = "Please enter only a numeric value in the textbox.";
-	 } else {
+	     if (! is_numeric($_POST["numberOfWords"]) && $_POST["numberOfWords"] != "") {
+	         $error_msg = "Please enter only a numeric value in the textbox.";
+	     } else {
 	     /* Iteration set by the user in the UI.  This loop constructs the password
 	      *  from words selected at random from the text file.
 	      */
-	     for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
-	         $randIndex = rand (0 , 10000 );
-	         // prevents first character being '-'.
-	         if ($i == 1 ){
-	             $password = $wordList[$randIndex];	     
-	         } else {
-	             $password = $password . "-" . $wordList[$randIndex];
-	         } 
+	         for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
+	             $randIndex = rand (0 , 10000 );
+	             // prevents first character being '-'.
+	             if ($i == 1 ){
+	                 $password = $wordList[$randIndex];	     
+	             } else {
+	                 $password = $password . "-" . $wordList[$randIndex];
+	             } 
+	         }
+	         if ($password != "") {
+	             $password_msg = "Your password is: <br />";
+	         }
 	     }
-	     if ($password != "") {
-	         $password_msg = "Your password is: <br />";
-	     }
-	 }
+	  }
 	 
 	 /* If the user elects to append the password with the number, add the 
 	  * number.  The number added is selected at random.

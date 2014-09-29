@@ -19,9 +19,12 @@
     	<div>
     	    <img class="sideImage" src="images/blueberryHill.Bushes.2.croped.jpg" height="600" width="250" alt="photograph of fall colors">
     	</div>
-
-        <h1 class="indent">Welcome to the XKCD password generator.</h1>  
-        <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by a hyphen.  You can set the maximum number of words to be used in the password.</h3>
+    	<div>
+        <h1 class="indent">Welcome to the xkcd password generator.</h1>
+        <h3 class="indent">What is an xkcd password? It is a password as one made of mulitple common words connected by a hyphen.  What is xkcd? It is a reference to a web site maintained by Randall Munroe.  xkcd is not an acronym but instead is a 4 character identifier for Randall's site discribed as "A webcomic of romance,
+ sarcasm, math, and language."  Give it a go:  <a href="http://xkcd.com/">xkcd</a> </h3>
+        <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by hyphens.  You can set the maximum number of words to be used in the password.</h3>
+        </div>
 
     	<form class="form" action="index.php" method="POST">
             <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is allowed in nine.<br>
@@ -35,7 +38,7 @@
             <label for='appendACharacter'>Would you like to append the password with the '@' character?<br>
             <input type='checkbox' name='appendACharacter' id='appendACharacter' >
             <br>
-            <input type='submit' value="Generate Another!">
+            <input type='submit' value="Generate Password!">
         </form>
         
         <!-- Ideally the password is printed here, but an error message is possible too -->
