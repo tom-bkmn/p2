@@ -23,8 +23,7 @@
     	</div>
 
             <h1 class="indent">Welcome to the xkcd password generator.</h1>
-            <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  What is xkcd?  It is a reference to a web site maintained by Randall Munroe.  xkcd is not an acronym but instead is a 4 character identifier for Randall's site self discribed as "a webcomic of romance,
- sarcasm, math, and language."  Give it a go:  <a href="http://xkcd.com/">xkcd</a> </h3>
+            <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  For more information about xkcd in general see Randall Munroe's sit here: <a href="http://xkcd.com/">xkcd</a> </h3>
             <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by hyphens.  You can set the maximum number of words to be used in the password.</h3>
         </div>
 
