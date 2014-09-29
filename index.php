@@ -15,8 +15,8 @@
         <div class="banner">
             <h1>Tom Beikman</h1>
             <h1>Dynamic Web Applications CSCI - E15 P2 Project</h1>
+            <br>
         </div>
-        <br>
     	<div>
     	    <img class="sideImage" src="images/blueberryHill.Bushes.2.croped.jpg" height="600" width="250" alt="photograph of fall colors">
     	</div>
