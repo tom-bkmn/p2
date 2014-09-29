@@ -16,12 +16,11 @@
             <h1>Tom Beikman</h1>
             <h1>Dynamic Web Applications CSCI - E15 P2 Project</h1>
         </div>
-        </div>
         <br>
     	<div>
     	    <img class="sideImage" src="images/blueberryHill.Bushes.2.croped.jpg" height="600" width="250" alt="photograph of fall colors">
     	</div>
-
+    	<div>
             <h1 class="indent">Welcome to the xkcd password generator.</h1>
             <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  For more information about xkcd in general see Randall Munroe's sit here: <a href="http://xkcd.com/">xkcd</a> </h3>
             <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by hyphens.  You can set the maximum number of words to be used in the password.</h3>
