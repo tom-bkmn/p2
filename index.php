@@ -8,7 +8,7 @@
         <?php require("logic.php"); ?>
     </head>
     <body >
-
+        <!-- Load the banner at the top of the page. -->
         <div>
             <img class="bannerLeft" src="images/blueberryHill.Bushes.bannerLeft.jpg" height="200" width="250" alt="photograph of fall colors">
         </div>
@@ -16,16 +16,19 @@
             <h1>Tom Beikman</h1>
             <h1>Dynamic Web Applications CSCI - E15 P2 Project</h1>
         </div>
+        <!-- Load the graphic on the left hand side of the page -->
     	<div>
     	    <br>
     	    <img class="sideImage" src="images/blueberryHill.Bushes.2.croped.jpg" height="600" width="250" alt="photograph of fall colors">
     	</div>
+    	<!-- Description of the site -->
     	<div>
             <h1 class="indent">Welcome to the xkcd password generator.</h1>
-            <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  For more information about xkcd in general see Randall Munroe's sit here: <a href="http://xkcd.com/">xkcd</a> </h3>
-            <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by hyphens.  You can set the maximum number of words to be used in the password.</h3>
+            <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  For more information about xkcd passwords and xkcd in general see Randall Munroe's sit here: <a href="http://xkcd.com/936/">xkcd</a> </h3>
+            <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by hyphens.  You can specify the number of words in the password with the text box below.</h3>
         </div>
 
+        <!-- Display the form and UI controls -->
     	<form class="form" action="index.php" method="POST">
     	    <div>
                 <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is allowed in nine.</label><br>

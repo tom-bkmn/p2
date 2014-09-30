@@ -6,7 +6,7 @@ p2
 • Live URL of the project:
  [p2.tombeikman.me](http://p2.tombeikman.me)
  
-• Project description: The goal of this project is to create a password generator in the style of a XKCD password generator.  There are few interative elements on the page:
+• Project description: The goal of this project is to create a password generator in the style of a XKCD password generator.  There are three controls on the page:
 
 1. A text box to set the number of words to use in the password.  Each word in the password is separated by a hypen.
 
@@ -19,7 +19,7 @@ p2
 • Demo information: I will perform a live demo of this project in section.  Section lead (Alain) will temporarily transfer control of the 
  WebEx session to me for the demo.
  
-• No additional details are needed.  The GitHub repository is public so no credentials are needed.
+• Additional details:  One extra challenge is attempted.  Validation is supported on the text field so that only the integers zero through nine can be used as values.  Other characters produce an error.
  
 • A bit of  third party resource was used from this site: 
     http://www.mit.edu/~ecprice/wordlist.10000

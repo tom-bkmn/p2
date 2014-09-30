@@ -30,7 +30,7 @@
 	 //Only process if numberOfWords is set to some value.
 	 if (isset($_POST["numberOfWords"])) {
 	 /* Validation - if the user enters a character other than a number
-	  * set the error message.  Empty string is allowed, however.  
+	  * set the error message.  Zero is allowed, however.  
 	  */
 	     if (! is_numeric($_POST["numberOfWords"]) && $_POST["numberOfWords"] != "") {
 	         $error_msg = "Please enter only a numeric value in the textbox.";
