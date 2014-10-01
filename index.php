@@ -24,7 +24,7 @@
     	<!-- Description of the site -->
     	<div>
             <h1 class="indent">Welcome to the xkcd password generator.</h1>
-            <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  For more information about xkcd passwords and xkcd in general see Randall Munroe's sit here: <a href="http://xkcd.com/936/">xkcd</a> </h3>
+            <h3 class="indent">What is an xkcd password? It is a password made of common words connected by hyphens.  For more information about these passwords and xkcd in general see Randall Munroe's sit here: <a href="http://xkcd.com/936/">xkcd</a> </h3>
             <h3 class="indent">The generator will create passwords for you based on combinations of familiar words separated by hyphens.  You can specify the number of words in the password with the text box below.</h3>
         </div>
 
@@ -32,15 +32,15 @@
     	<form class="form" action="index.php" method="POST">
     	    <div>
                 <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is allowed in nine.</label><br>
-                <input type="text" maxlength=1 size=1 name='numberOfWords' id='numberOfWords'>
+                <input type="text" maxlength=1 size=1 name='numberOfWords'>
                 <br>
                 <br>
                 <label for='appendANumber'>Would you like to append the password with a randomly generated integer?</label><br>
-                <input type='checkbox' name='appendANumber' id='appendANumber' >
+                <input type='checkbox' name='appendANumber'>
 	        <br>
 	        <br>            
                 <label for='appendACharacter'>Would you like to append the password with the '@' character?</label><br>
-                <input type='checkbox' name='appendACharacter' id='appendACharacter' >
+                <input type='checkbox' name='appendACharacter'>
                 <br>
                 <input type='submit' value="Generate Password!">
             </div>

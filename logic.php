@@ -27,16 +27,19 @@
 	 $error_msg = "";
 	 $password_msg = "";
 	 
-	 //Only process if numberOfWords is set to some value.
+	 /* This first check prevents accessing non-existing element in 
+	  * $_POST array (UI error) when the form is first processed.
+	  */
 	 if (isset($_POST["numberOfWords"])) {
 	 /* Validation - if the user enters a character other than a number
-	  * set the error message.  Zero is allowed, however.  
+	  * and the field is not empty set the error message.  
+	  * Zero is allowed, however.  
 	  */
-	     if (! is_numeric($_POST["numberOfWords"]) && $_POST["numberOfWords"] != "") {
+	     if (! is_numeric($_POST["numberOfWords"]) && $_POST["numberOfWords"] != "" ) {
 	         $error_msg = "Please enter only a numeric value in the textbox.";
 	     } else {
 	     /* Iteration set by the user in the UI.  This loop constructs the password
-	      *  from words selected at random from the text file.
+	      * from words selected at random from the text file.
 	      */
 	         for ($i = 1; $i <= $_POST["numberOfWords"]; $i++) {
 	             $randIndex = rand (0 , 10000 );
