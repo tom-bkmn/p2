@@ -32,15 +32,15 @@
     	<form class="form" action="index.php" method="POST">
     	    <div>
                 <label for='numberOfWords'>Please enter the number of words to use in the password.  Maximum value is allowed in nine.</label><br>
-                <input type="text" maxlength=1 size=1 name='numberOfWords'>
+                <input type="text" maxlength=1 size=1 name='numberOfWords' id='numberOfWords'>
                 <br>
                 <br>
                 <label for='appendANumber'>Would you like to append the password with a randomly generated integer?</label><br>
-                <input type='checkbox' name='appendANumber'>
+                <input type='checkbox' name='appendANumber' id='appendANumber'>
 	        <br>
 	        <br>            
                 <label for='appendACharacter'>Would you like to append the password with the '@' character?</label><br>
-                <input type='checkbox' name='appendACharacter'>
+                <input type='checkbox' name='appendACharacter' id='appendACharacter'>
                 <br>
                 <br>
                 <input class="button" type='submit' value="Generate Password!">
