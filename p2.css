@@ -4,7 +4,8 @@
 body {
 	font-family: Veranda, Arial, sans-serif;
 	font-size: small;
-	background-image: url(images/blueberryHill.Bushes.backgnd.2.jpg);
+	/* background-image: url(images/blueberryHill.Bushes.backgnd.2.jpg); */
+	background-color: white;
 }
 
 .sideImage {
@@ -25,7 +26,7 @@ body {
 	border-style: solid;
 	background-image: url(images/blueberryHill.Bushes.tops.4.jpg);
 	margin-left: 275px;
-	margin-right: -8px;
+
 }
 
 .indent {
@@ -46,9 +47,12 @@ body {
 	color: #5C2E00;
 	line-height: 1em;
 	margin-left: 300px;
-	margin-top: 75px;
+	margin-top: 40px;
 }
 
+.button {
+	color: #5C2E00;
+}
 
 h1 {
 	font-size:  200%;	

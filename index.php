@@ -42,7 +42,8 @@
                 <label for='appendACharacter'>Would you like to append the password with the '@' character?</label><br>
                 <input type='checkbox' name='appendACharacter'>
                 <br>
-                <input type='submit' value="Generate Password!">
+                <br>
+                <input class="button" type='submit' value="Generate Password!">
             </div>
         </form>
         
