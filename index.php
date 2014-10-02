@@ -3,7 +3,7 @@
 <html >
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-        <title>P2 - XKCD Password Generator</title>
+        <title>XKCD Password Generator</title>
         <link rel="stylesheet" type="text/css" href="p2.css">
         <?php require("logic.php"); ?>
     </head>
@@ -13,8 +13,8 @@
             <img class="bannerLeft" src="images/blueberryHill.Bushes.bannerLeft.jpg" height="200" width="250" alt="photograph of fall colors">
         </div>
         <div class="banner">
-            <h1>Tom Beikman</h1>
-            <h1>Dynamic Web Applications CSCI - E15 P2 Project</h1>
+            <h1>The XKCD Password Generator</h1>
+            <h1>Tom Beikman CSCI - E15 P2 Project</h1>
         </div>
         <!-- Load the graphic on the left hand side of the page -->
     	<div>
