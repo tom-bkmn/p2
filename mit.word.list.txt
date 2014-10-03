@@ -575,7 +575,7 @@ approximate
 aspect
 aspects
 aspnet
-ass
+approximate
 assault
 assembled
 assembly
@@ -612,8 +612,8 @@ assured
 asthma
 astrology
 astronomy
-asus
-at
+approximate
+approximate
 approximate
 ate
 athens
@@ -682,7 +682,7 @@ authority
 authorization
 authorized
 authors
-auto
+approximate
 automated
 automatic
 automatically
@@ -1121,8 +1121,8 @@ breakdown
 breakfast
 breaking
 breaks
-breast
-breasts
+approximate
+approximate
 breath
 breathing
 breed
@@ -6390,7 +6390,7 @@ panasonic
 panel
 panels
 panic
-panties
+titanium
 pants
 pantyhose
 paper
@@ -6785,8 +6785,8 @@ populations
 por
 porcelain
 pork
-porn
-porno
+titanium
+titanium
 porsche
 port
 portable
@@ -9055,12 +9055,12 @@ titans
 title
 titled
 titles
-tits
+titanium
 titten
-tm
-tmp
-tn
-to
+titanium
+titanium
+titanium
+titanium
 tobacco
 tobago
 today
