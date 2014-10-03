@@ -16,8 +16,8 @@ p2
 
 3. A checkbox to determine if the '@' character should be appended to the password.
  
-• Demo information: I will perform a live demo of this project in section.  Section lead (Alain) will temporarily transfer control of the 
- WebEx session to me for the demo.
+• Demo information: I downloaded and learned how to use Jing, so i recorded my demo and posted to screencast.com.  
+The url to watch the demo is: http://screencast.com/t/RUtRKToo
  
 • Additional details:  One extra challenge is attempted.  Validation is supported on the text field so that only the integers zero through nine can be used as values.  Other characters produce an error.
  
